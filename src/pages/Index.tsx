@@ -6,9 +6,16 @@ import Icon from "@/components/ui/icon";
 const Index = () => {
   return (
     <div className="min-h-screen bg-gothic-black text-white overflow-hidden">
-      {/* Animated Background */}
+      {/* Velvet Background */}
       <div className="fixed inset-0 bg-gradient-to-br from-gothic-black via-gothic-gray to-gothic-purple opacity-90"></div>
       <div className="fixed inset-0 bg-[url('img/8ed895aa-08dd-447c-a720-75897d051321.jpg')] bg-cover bg-center opacity-10 mix-blend-overlay"></div>
+      
+      {/* Velvet texture overlay */}
+      <div className="fixed inset-0 opacity-30">
+        <div className="absolute inset-0 bg-gradient-radial from-gothic-purple/20 via-transparent to-gothic-red/10 animate-pulse" style={{animationDuration: '8s'}}></div>
+        <div className="absolute inset-0 bg-gradient-conic from-gothic-black via-gothic-purple/10 to-gothic-black opacity-40 animate-spin" style={{animationDuration: '60s'}}></div>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(139,69,19,0.05)_0%,transparent_50%)] bg-[length:200px_100px] opacity-60"></div>
+      </div>
       
       {/* Header */}
       <header className="relative z-10 p-6">
