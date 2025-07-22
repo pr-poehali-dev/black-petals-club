@@ -49,55 +49,33 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="relative z-10 py-20 px-6">
-        <div className="max-w-4xl mx-auto text-center relative">
-          {/* Rose Background */}
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0">
-            <div className="relative">
-              {/* Smoke layers */}
-              <div className="absolute inset-0 w-[700px] h-[700px] bg-gradient-radial from-gothic-red/5 via-gothic-purple/10 to-transparent rounded-full blur-3xl animate-smoke"></div>
-              <div className="absolute inset-0 w-[650px] h-[650px] bg-gradient-conic from-gothic-red/10 via-transparent to-gothic-purple/10 rounded-full blur-2xl animate-pulse" style={{animationDuration: '6s'}}></div>
-              
-              {/* Rose emerging from smoke */}
-              <img 
-                src="img/8172b3de-a259-4f0e-950d-4f623e8d8e09.jpg" 
-                alt="Scarlet Rose in Smoke"
-                className="w-[600px] h-[600px] object-cover blur-sm animate-rose-emerge"
-              />
-              
-              {/* Additional smoke effect on top */}
-              <div className="absolute inset-0 bg-gradient-radial from-transparent via-gothic-red/5 to-gothic-purple/15 blur-xl animate-smoke" style={{animationDelay: '1s'}}></div>
-            </div>
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="mb-8">
+            <Badge className="bg-gothic-purple text-gothic-silver mb-4 px-4 py-2 text-sm tracking-wider">
+              MEMBERS ONLY
+            </Badge>
           </div>
-
-          {/* Content */}
-          <div className="relative z-10">
-            <div className="mb-8">
-              <Badge className="bg-gothic-purple text-gothic-silver mb-4 px-4 py-2 text-sm tracking-wider">
-                MEMBERS ONLY
-              </Badge>
-            </div>
-            
-            <h1 className="text-6xl md:text-8xl font-bold mb-6 text-gothic-silver leading-tight drop-shadow-2xl" 
-                style={{fontFamily: 'Cormorant Garamond'}}>
-              Black Petals<br />
-              <span className="text-gothic-red drop-shadow-lg">Syndicate</span>
-            </h1>
-            
-            <p className="text-xl md:text-2xl text-gothic-silver/90 mb-8 max-w-2xl mx-auto leading-relaxed drop-shadow-lg">
-              Добро пожаловать в закрытый клуб ценителей редких и таинственных растений. 
-              Только для избранных.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button size="lg" className="bg-gothic-red hover:bg-red-700 text-white px-8 py-4 text-lg transform hover:scale-105 transition-all shadow-xl">
-                <Icon name="Key" className="w-5 h-5 mr-2" />
-                Подать заявку
-              </Button>
-              <Button variant="outline" size="lg" className="border-gothic-silver text-gothic-silver hover:bg-gothic-silver hover:text-gothic-black px-8 py-4 text-lg transition-all shadow-xl">
-                <Icon name="Eye" className="w-5 h-5 mr-2" />
-                Узнать больше
-              </Button>
-            </div>
+          
+          <h1 className="text-6xl md:text-8xl font-bold mb-6 text-gothic-silver leading-tight" 
+              style={{fontFamily: 'Cormorant Garamond'}}>
+            Black Petals<br />
+            <span className="text-gothic-red">Syndicate</span>
+          </h1>
+          
+          <p className="text-xl md:text-2xl text-gothic-silver/80 mb-8 max-w-2xl mx-auto leading-relaxed">
+            Добро пожаловать в закрытый клуб ценителей редких и таинственных растений. 
+            Только для избранных.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button size="lg" className="bg-gothic-red hover:bg-red-700 text-white px-8 py-4 text-lg transform hover:scale-105 transition-all">
+              <Icon name="Key" className="w-5 h-5 mr-2" />
+              Подать заявку
+            </Button>
+            <Button variant="outline" size="lg" className="border-gothic-silver text-gothic-silver hover:bg-gothic-silver hover:text-gothic-black px-8 py-4 text-lg transition-all">
+              <Icon name="Eye" className="w-5 h-5 mr-2" />
+              Узнать больше
+            </Button>
           </div>
         </div>
       </section>
