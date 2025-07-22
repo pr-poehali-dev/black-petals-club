@@ -101,3 +101,49 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Gothic animations */
+@keyframes smoke-weave {
+  0% { 
+    opacity: 0; 
+    filter: blur(20px) brightness(0.3); 
+    transform: scale(0.8) translateY(20px);
+    text-shadow: 0 0 40px rgba(139, 0, 0, 0.8);
+  }
+  50% { 
+    opacity: 0.7; 
+    filter: blur(8px) brightness(0.7); 
+    transform: scale(1.05) translateY(-5px);
+    text-shadow: 0 0 60px rgba(139, 0, 0, 0.9), 0 0 100px rgba(75, 0, 130, 0.3);
+  }
+  100% { 
+    opacity: 1; 
+    filter: blur(2px) brightness(1); 
+    transform: scale(1) translateY(0px);
+    text-shadow: 0 0 30px rgba(139, 0, 0, 0.6), 0 0 50px rgba(75, 0, 130, 0.2), inset 0 0 20px rgba(0, 0, 0, 0.8);
+  }
+}
+
+.smoke-weave-text {
+  animation: smoke-weave 4s ease-out forwards;
+  background: linear-gradient(45deg, 
+    rgba(192, 192, 192, 1) 0%,
+    rgba(139, 0, 0, 0.9) 25%, 
+    rgba(192, 192, 192, 1) 50%,
+    rgba(75, 0, 130, 0.7) 75%,
+    rgba(192, 192, 192, 1) 100%
+  );
+  background-size: 400% 400%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation-delay: 0.5s;
+}
+
+.smoke-weave-text:first-child {
+  animation-delay: 0.8s;
+}
+
+.smoke-weave-text:last-child {
+  animation-delay: 1.2s;
+}

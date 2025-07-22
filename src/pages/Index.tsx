@@ -92,11 +92,11 @@ const Index = () => {
             
             <h1 className="text-6xl md:text-8xl font-bold mb-6 text-gothic-silver leading-tight drop-shadow-2xl relative" 
                 style={{fontFamily: 'Cormorant Garamond'}}>
-              <span className="relative inline-block px-6 py-2 border-2 border-gothic-red/60 bg-gothic-black/40 backdrop-blur-sm rounded-lg shadow-2xl">
+              <span className="relative inline-block px-6 py-2 border-2 border-gothic-red/60 bg-gothic-black/40 backdrop-blur-sm rounded-lg shadow-2xl smoke-weave-text">
                 Black Petals
               </span>
               <br />
-              <span className="relative inline-block px-6 py-2 mt-4 border-2 border-gothic-silver/60 bg-gothic-purple/40 backdrop-blur-sm rounded-lg text-gothic-red drop-shadow-lg shadow-2xl">
+              <span className="relative inline-block px-6 py-2 mt-4 border-2 border-gothic-silver/60 bg-gothic-purple/40 backdrop-blur-sm rounded-lg text-gothic-red drop-shadow-lg shadow-2xl smoke-weave-text">
                 Syndicate
               </span>
             </h1>
