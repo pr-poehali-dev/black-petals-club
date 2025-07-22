@@ -91,11 +91,20 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'smoke': {
+					'0%, 100%': { opacity: '0.3', transform: 'scale(1) rotate(0deg)' },
+					'50%': { opacity: '0.7', transform: 'scale(1.1) rotate(180deg)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'smoke': 'smoke 4s ease-in-out infinite'
+			},
+			backgroundImage: {
+				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+				'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
 			}
 		}
 	},
