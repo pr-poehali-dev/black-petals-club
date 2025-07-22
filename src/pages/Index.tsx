@@ -77,10 +77,15 @@ const Index = () => {
               </Badge>
             </div>
             
-            <h1 className="text-6xl md:text-8xl font-bold mb-6 text-gothic-silver leading-tight drop-shadow-2xl" 
+            <h1 className="text-6xl md:text-8xl font-bold mb-6 text-gothic-silver leading-tight drop-shadow-2xl relative" 
                 style={{fontFamily: 'Cormorant Garamond'}}>
-              Black Petals<br />
-              <span className="text-gothic-red drop-shadow-lg">Syndicate</span>
+              <span className="relative inline-block px-6 py-2 border-2 border-gothic-red/60 bg-gothic-black/40 backdrop-blur-sm rounded-lg shadow-2xl">
+                Black Petals
+              </span>
+              <br />
+              <span className="relative inline-block px-6 py-2 mt-4 border-2 border-gothic-silver/60 bg-gothic-purple/40 backdrop-blur-sm rounded-lg text-gothic-red drop-shadow-lg shadow-2xl">
+                Syndicate
+              </span>
             </h1>
             
             <p className="text-xl md:text-2xl text-gothic-silver/90 mb-8 max-w-2xl mx-auto leading-relaxed drop-shadow-lg">
