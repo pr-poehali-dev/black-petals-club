@@ -53,19 +53,25 @@ const Index = () => {
           {/* Rose Background */}
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0">
             <div className="relative">
-              {/* Smoke layers */}
-              <div className="absolute inset-0 w-[700px] h-[700px] bg-gradient-radial from-gothic-red/5 via-gothic-purple/10 to-transparent rounded-full blur-3xl animate-smoke"></div>
-              <div className="absolute inset-0 w-[650px] h-[650px] bg-gradient-conic from-gothic-red/10 via-transparent to-gothic-purple/10 rounded-full blur-2xl animate-pulse" style={{animationDuration: '6s'}}></div>
+              {/* Smoke layers - larger and more blurred */}
+              <div className="absolute inset-0 w-[1000px] h-[1000px] bg-gradient-radial from-gothic-red/5 via-gothic-purple/10 to-transparent rounded-full blur-[80px] animate-smoke"></div>
+              <div className="absolute inset-0 w-[900px] h-[900px] bg-gradient-conic from-gothic-red/10 via-transparent to-gothic-purple/10 rounded-full blur-[60px] animate-pulse" style={{animationDuration: '6s'}}></div>
               
-              {/* Rose emerging from smoke */}
-              <img 
-                src="img/8172b3de-a259-4f0e-950d-4f623e8d8e09.jpg" 
-                alt="Scarlet Rose in Smoke"
-                className="w-[600px] h-[600px] object-cover animate-rose-emerge"
-              />
+              {/* Rose emerging from smoke - larger with soft edges */}
+              <div className="relative w-[800px] h-[800px] rounded-full overflow-hidden">
+                <img 
+                  src="img/8172b3de-a259-4f0e-950d-4f623e8d8e09.jpg" 
+                  alt="Scarlet Rose in Smoke"
+                  className="w-full h-full object-cover animate-rose-emerge"
+                  style={{
+                    maskImage: 'radial-gradient(circle, rgba(0,0,0,1) 30%, rgba(0,0,0,0.8) 60%, rgba(0,0,0,0) 100%)',
+                    WebkitMaskImage: 'radial-gradient(circle, rgba(0,0,0,1) 30%, rgba(0,0,0,0.8) 60%, rgba(0,0,0,0) 100%)'
+                  }}
+                />
+              </div>
               
-              {/* Additional smoke effect on top */}
-              <div className="absolute inset-0 bg-gradient-radial from-transparent via-gothic-red/5 to-gothic-purple/15 blur-xl animate-smoke" style={{animationDelay: '1s'}}></div>
+              {/* Additional smoke effect on top - larger */}
+              <div className="absolute inset-0 w-[1100px] h-[1100px] bg-gradient-radial from-transparent via-gothic-red/5 to-gothic-purple/15 blur-[100px] animate-smoke" style={{animationDelay: '1s'}}></div>
             </div>
           </div>
 
