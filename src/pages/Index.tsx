@@ -53,12 +53,19 @@ const Index = () => {
           {/* Rose Background */}
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0">
             <div className="relative">
+              {/* Smoke layers */}
+              <div className="absolute inset-0 w-[700px] h-[700px] bg-gradient-radial from-gothic-red/5 via-gothic-purple/10 to-transparent rounded-full blur-3xl animate-smoke"></div>
+              <div className="absolute inset-0 w-[650px] h-[650px] bg-gradient-conic from-gothic-red/10 via-transparent to-gothic-purple/10 rounded-full blur-2xl animate-pulse" style={{animationDuration: '6s'}}></div>
+              
+              {/* Rose emerging from smoke */}
               <img 
                 src="img/8172b3de-a259-4f0e-950d-4f623e8d8e09.jpg" 
                 alt="Scarlet Rose in Smoke"
-                className="w-[600px] h-[600px] object-cover opacity-20 blur-sm animate-smoke"
+                className="w-[600px] h-[600px] object-cover blur-sm animate-rose-emerge"
               />
-              <div className="absolute inset-0 bg-gradient-radial from-gothic-red/10 via-transparent to-transparent blur-3xl animate-pulse"></div>
+              
+              {/* Additional smoke effect on top */}
+              <div className="absolute inset-0 bg-gradient-radial from-transparent via-gothic-red/5 to-gothic-purple/15 blur-xl animate-smoke" style={{animationDelay: '1s'}}></div>
             </div>
           </div>
 
