@@ -49,50 +49,47 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="relative z-10 py-20 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Text Content */}
-            <div className="text-center lg:text-left">
-              <div className="mb-8">
-                <Badge className="bg-gothic-purple text-gothic-silver mb-4 px-4 py-2 text-sm tracking-wider">
-                  MEMBERS ONLY
-                </Badge>
-              </div>
-              
-              <h1 className="text-6xl md:text-8xl font-bold mb-6 text-gothic-silver leading-tight" 
-                  style={{fontFamily: 'Cormorant Garamond'}}>
-                Black Petals<br />
-                <span className="text-gothic-red">Syndicate</span>
-              </h1>
-              
-              <p className="text-xl md:text-2xl text-gothic-silver/80 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                Добро пожаловать в закрытый клуб ценителей редких и таинственных растений. 
-                Только для избранных.
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
-                <Button size="lg" className="bg-gothic-red hover:bg-red-700 text-white px-8 py-4 text-lg transform hover:scale-105 transition-all">
-                  <Icon name="Key" className="w-5 h-5 mr-2" />
-                  Подать заявку
-                </Button>
-                <Button variant="outline" size="lg" className="border-gothic-silver text-gothic-silver hover:bg-gothic-silver hover:text-gothic-black px-8 py-4 text-lg transition-all">
-                  <Icon name="Eye" className="w-5 h-5 mr-2" />
-                  Узнать больше
-                </Button>
-              </div>
+        <div className="max-w-4xl mx-auto text-center relative">
+          {/* Rose Background */}
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0">
+            <div className="relative">
+              <img 
+                src="img/8172b3de-a259-4f0e-950d-4f623e8d8e09.jpg" 
+                alt="Scarlet Rose in Smoke"
+                className="w-[600px] h-[600px] object-cover opacity-20 blur-sm animate-smoke"
+              />
+              <div className="absolute inset-0 bg-gradient-radial from-gothic-red/10 via-transparent to-transparent blur-3xl animate-pulse"></div>
             </div>
+          </div>
 
-            {/* Scarlet Rose in Smoke */}
-            <div className="relative flex justify-center lg:justify-end">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-radial from-gothic-red/20 via-transparent to-transparent rounded-full blur-3xl animate-pulse"></div>
-                <img 
-                  src="img/8172b3de-a259-4f0e-950d-4f623e8d8e09.jpg" 
-                  alt="Scarlet Rose in Smoke"
-                  className="relative z-10 w-96 h-96 object-cover rounded-full border-4 border-gothic-red/30 shadow-2xl transform hover:scale-105 transition-all duration-500"
-                />
-                <div className="absolute -inset-4 bg-gradient-conic from-gothic-red via-gothic-purple to-gothic-red opacity-30 rounded-full blur-lg animate-spin" style={{animationDuration: '20s'}}></div>
-              </div>
+          {/* Content */}
+          <div className="relative z-10">
+            <div className="mb-8">
+              <Badge className="bg-gothic-purple text-gothic-silver mb-4 px-4 py-2 text-sm tracking-wider">
+                MEMBERS ONLY
+              </Badge>
+            </div>
+            
+            <h1 className="text-6xl md:text-8xl font-bold mb-6 text-gothic-silver leading-tight drop-shadow-2xl" 
+                style={{fontFamily: 'Cormorant Garamond'}}>
+              Black Petals<br />
+              <span className="text-gothic-red drop-shadow-lg">Syndicate</span>
+            </h1>
+            
+            <p className="text-xl md:text-2xl text-gothic-silver/90 mb-8 max-w-2xl mx-auto leading-relaxed drop-shadow-lg">
+              Добро пожаловать в закрытый клуб ценителей редких и таинственных растений. 
+              Только для избранных.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <Button size="lg" className="bg-gothic-red hover:bg-red-700 text-white px-8 py-4 text-lg transform hover:scale-105 transition-all shadow-xl">
+                <Icon name="Key" className="w-5 h-5 mr-2" />
+                Подать заявку
+              </Button>
+              <Button variant="outline" size="lg" className="border-gothic-silver text-gothic-silver hover:bg-gothic-silver hover:text-gothic-black px-8 py-4 text-lg transition-all shadow-xl">
+                <Icon name="Eye" className="w-5 h-5 mr-2" />
+                Узнать больше
+              </Button>
             </div>
           </div>
         </div>
