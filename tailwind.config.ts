@@ -91,11 +91,27 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'smoke': {
+					'0%, 100%': { opacity: '0.3', transform: 'scale(1) rotate(0deg)' },
+					'50%': { opacity: '0.7', transform: 'scale(1.1) rotate(180deg)' }
+				},
+				'rose-emerge': {
+					'0%': { opacity: '0', transform: 'scale(0.8) translateY(20px)' },
+					'30%': { opacity: '0.1', transform: 'scale(0.9) translateY(10px)' },
+					'60%': { opacity: '0.15', transform: 'scale(0.95) translateY(5px)' },
+					'100%': { opacity: '0.2', transform: 'scale(1) translateY(0px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'smoke': 'smoke 4s ease-in-out infinite',
+				'rose-emerge': 'rose-emerge 3s ease-out forwards'
+			},
+			backgroundImage: {
+				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+				'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
 			}
 		}
 	},
